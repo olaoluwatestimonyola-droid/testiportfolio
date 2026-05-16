@@ -1,0 +1,117 @@
+.hero {
+  min-height: 100vh;
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 80px;
+
+  padding: 120px 80px;
+}
+
+.hero-image img {
+  width: 380px;
+  height: 450px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 8px solid gold;
+
+  box-shadow:
+    0 0 20px gold,
+    0 0 40px gold,
+    0 0 60px gold;
+}
+
+.hero-text {
+  max-width: 700px;
+  color: white;
+}
+
+.hero-text p:first-child {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  color: gold;
+  margin-bottom: 30px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+.hero-text span {
+  color: gold;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+/* ========================= */
+/* TABLET RESPONSIVENESS */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 150px 40px 80px;
+  }
+
+  .hero-image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVENESS */
+/* ========================= */
+
+@media (max-width: 600px) {
+  .hero {
+    gap: 40px;
+    padding: 140px 20px 60px;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-text p:first-child {
+    font-size: 1.3rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
