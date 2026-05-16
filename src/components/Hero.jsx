@@ -20,7 +20,7 @@ function Hero() {
 
         <h1>
           Olaoluwa <br />
-          Testimony
+          Olasubomi
         </h1>
 
         <h2>
